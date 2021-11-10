@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+
+.header h1 {
+  /* background: #f02; */
+  width: 100vw;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* 
+*#*#*#*#*#*#*#*# CONTENEDOR FLEX *#*#*#*#*#*#
+ */
+.container-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* 
+*--------------NAVBAR------------------
+*/
+.navbar {
+  /* background: #aaff21; */
+  padding-left: 2rem;
+  width: 20vw;
+  margin-left: 7rem;
+}
+
+.navbar ul {
+  margin-top: 1rem;
+  padding-left: 3rem;
+}
+
+/* 
+*----------CONTAINER------------------
+*/
+.container-main {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  margin-left: 2rem;
+}
+
+.container-main h2 {
+  padding-left: 1rem;
+}
+
+.container-main p {
+  /* background: #00f2cc; */
+  padding-left: 2rem;
+  margin: 1.5rem 0rem 1.5rem 0rem;
+}
+
+h2 {
+  margin-top: 1rem;
+}
+
+/* 
+*----------ETIQUETA UL------------
+*/
+.border-1 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1rem;
+  list-style: none;
+}
+
+.border-1 li {
+  /* background: #00f2cc; */
+  width: 20vw;
+  padding: 1rem;
+}

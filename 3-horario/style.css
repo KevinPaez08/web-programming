@@ -1,0 +1,27 @@
+caption {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+table {
+  /* border: 1px solid; */
+  /* text-align: center; */
+  /* border-collapse: separate; */
+  margin: 0 auto;
+  empty-cells: show;
+  border-spacing: 5px;
+}
+
+th,
+td {
+  width: 120px;
+  text-align: left;
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+.vacio {
+  text-align: center;
+}
+/* th {
+} */

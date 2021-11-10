@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- *----------- HEAD ------- -->
+  <div class="container">
+    <div class="card mt-4 bg-info">
+      <div class="p-4 card-title">
+        <h1 class="text-start text-white fw-bold">Contact Form</h1>
+        <p class="card-text text-white"> Please fill in your information and we'll be sending your order in no time</p>
+      </div>
+      <div class="card-body p-4 bg-info">
+        <form>
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="input-group mb-3">
+                <label class="form-label text-white text-white">Your Name</label>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="input-group mb-3">
+                <!-- <span class="input-group-text" id="basic-addon1">1</span> -->
+                <input type="text" class="form-control" placeholder="First Name" aria-label="Username"
+                  aria-describedby="basic-addon1">
+              </div>
+            </div>
+            <div class="col-sm-5">
+              <div class="input-group mb-3">
+                <!-- <label class="form-label text-white">Apellidos</label> -->
+                <input type="text" class="form-control" name="ap" id="ap" placeholder="Last Name" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="input-group mb-3">
+                <label class="form-label text-white">Your Email</label>
+              </div>
+            </div>
+            <div class="col-sm-9">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="e.g. hello@contact.net" aria-label="Username"
+                  aria-describedby="basic-addon1">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="input-group mb-3">
+                <label class="form-label text-white">Phone*</label>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="###" aria-label="Username"
+                  aria-describedby="basic-addon1">
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="###" aria-label="Username"
+                  aria-describedby="basic-addon1">
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="###" aria-label="Username"
+                  aria-describedby="basic-addon1">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="input-group mb-3">
+                <label class="form-label text-white">Message Subjet*</label>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="input-group mb-3">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Other</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="input-group mb-3">
+                <label class="form-label text-white">Message*</label>
+              </div>
+            </div>
+            <div class="col-sm-9">
+              <div class="input-group mb-3">
+                <!-- <span class="input-group-text">With textarea</span> -->
+                <textarea class="form-control" aria-label="With textarea"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="input-group mb-3">
+                <label class="form-label text-white">Verification*</label>
+              </div>
+            </div>
+            <div class="col-sm-9">
+              <div class="input-group mb-3">
+                ​<picture style="width: 15rem;">
+                  <img src="recaptcha.gif" class="rounded img-thumbnail" alt="recaptcha">
+                </picture>
+              </div>
+            </div>
+          </div>
+
+          <!-- <hr class="bg-light border-3 border-top border-light "> -->
+
+          <div class="d-grid gap-2 col-5 mt-3">
+            <button type="submit" class="btn btn-outline-light">SUBMIT FORM</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

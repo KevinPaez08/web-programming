@@ -1,0 +1,41 @@
+/**{
+	margin:0;
+	padding: 0;
+}*/
+
+
+html{
+	font-size: 62.5%;
+}
+body{
+	font-size: 1.6rem;
+	/*margin: 2rem;*/
+	padding: 0rem 1rem 0rem 1rem;
+}
+
+
+h1{
+	border: 0.2rem solid blue;
+	padding: 2rem;
+	margin: 3rem 0rem 3rem 0rem;
+}
+
+h2{
+	border: 0.2rem solid black;
+	padding: 1rem;
+	margin: 1.5rem 0rem 1.5rem 0rem;
+}
+
+#datos {
+	border: 0.4rem solid green;
+	/*border-bottom: 0.4rem dotted red;*/
+	margin-left: 3rem;
+}
+
+#datos li {
+	margin: 0rem 0rem 1rem 0rem;
+}
+
+.border-1{
+	border: 0.3rem dotted green;
+}

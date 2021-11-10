@@ -1,0 +1,33 @@
+body {
+  width: 960px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.navbar {
+  float: left;
+  padding: 0;
+  margin: 0;
+  width: 260px;
+}
+
+.container-main {
+  float: left;
+  padding: 0;
+  margin: 0;
+  width: 700px;
+}
+
+.border-1 {
+  list-style: none;
+  padding: 0;
+}
+
+.border-1 li {
+  float: left;
+  width: 30%;
+  padding: 10px;
+}

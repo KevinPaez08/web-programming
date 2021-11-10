@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  margin: 0.8rem;
+}
+
+h1 {
+  color: teal;
+}
+
+.text-1 {
+  color: red;
+}
+
+.text-2 {
+  color: orange;
+}
+
+h2 {
+  color: blue;
+  margin: 2rem 0rem 1rem 0rem;
+}
+
+a {
+  color: red;
+}
+
+a em {
+  color: blue;
+}
+
+.text-3 {
+  color: purple;
+}
+
+/* 
+  Estilos de tabla
+ */
+table {
+  margin: 0 auto;
+  empty-cells: show;
+  /* border-spacing: 0.01rem; */
+  border: 0.1rem solid black;
+  border-collapse: collapse;
+}
+caption {
+  color: blue;
+}
+
+th,
+td {
+  /* width: 8rem; */
+  text-align: left;
+  border: 0.1rem solid #000;
+  padding: 0.5rem;
+}
+
+.col-1 {
+  color: orange;
+}
+
+.row-1 {
+  color: orange;
+}
+
+.col-2,
+.row-2 {
+  color: red;
+}
+
+td {
+  color: green;
+}
+
+.text-4 {
+  color: green;
+}
+
+.text-5 {
+  color: orange;
+}
+
+/* 
+  Estilos div 
+*/
+div {
+  margin-top: 2rem;
+  color: olivedrab;
+}
+
+.text-6 {
+  color: fuchsia;
+}
+
+.text-7 {
+  color: green;
+}

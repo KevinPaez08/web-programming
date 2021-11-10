@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 25px;
+}
+
+.menu {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p,
+h2 {
+  margin-bottom: 9px;
+}
+
+.datos {
+  display: inline-block;
+  position: absolute;
+  margin: 10px;
+  padding: 5px;
+}
+
+.foto {
+  display: inline-block;
+  margin: 0px 0px 0px 20px;
+}
+
+img {
+  border-radius: 10px;
+  width: 215px;
+  height: 200px;
+}
+
+.estudios,
+.experiencia {
+  margin: 30px;
+}
+
+.estudios ul {
+  padding: 0px 0px 0px 30px;
+}
+
+.experiencia ol {
+  padding: 0px 0px 0px 30px;
+}
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  display: inline-block;
+}
