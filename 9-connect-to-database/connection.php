@@ -33,7 +33,7 @@ class Connection
         if ($create) {
             return true;
         } else {
-            echo "error";
+            return false;
         }
     }
 

@@ -1,16 +1,21 @@
 <?php
 
-// echo "your username is " . $user . "<br>";
-// echo "your password is " . $pass . "<br>";
 require_once './connection.php';
 
+// INSTANCE THE OBJECT OF CLASS connection
 $connect = new Connection();
 
+// SAVE USER DATA
 $user = $_POST['user'];
 $pass = $_POST['pass'];
 
+// CHECK IF THE DATA IS EMPTY
 if (isset($user) && isset($pass)) {
+
+    // CALL THE METHOD createUser OF OBJECT connect
     $connect->createUser($user, $pass);
+
+    // IF ALL WAS SUCCESSFUL THE OBJECT connect RETURNS A TRUE
     if ($connect) {
         echo "Usuario Agregado";
     } else {
@@ -19,5 +24,3 @@ if (isset($user) && isset($pass)) {
 } else {
     echo "Datos vacíos";
 }
-
-// $connect->getConnection();
