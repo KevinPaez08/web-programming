@@ -10,7 +10,7 @@ $user = $_POST['user'];
 $pass = $_POST['pass'];
 
 // CHECK IF THE DATA IS EMPTY
-if (isset($user) && isset($pass)) {
+if (!empty($user) && !empty($pass)) {
 
     // CALL THE METHOD createUser OF OBJECT connect
     $connect->createUser($user, $pass);
