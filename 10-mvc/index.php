@@ -20,7 +20,7 @@
         <h1 class="text-center text-danger">Elite Login Form</h1>
       </div>
       <div class="card-body p-5 bg-light">
-        <form method="post" action="./controllers/loginController.php">
+        <form method="post" action="./controllers/loginController-create.php">
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Username:</label>
             <input type="text" name="user" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"

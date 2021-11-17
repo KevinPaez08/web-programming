@@ -1,3 +1,14 @@
+<?php
+require_once '../models/LoginModel.php';
+
+$consult = new LoginModel();
+
+$usuarios = $consult->readUser();
+// var_dump($usuarios);
+
+// echo "Hola mundo";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,6 +26,32 @@
 
   <div class="container">
     <h1>Hola</h1>
+
+    <table class="table table-striped table-hover">
+      <thead>
+        <tr>
+          <th scope="col">#Id</th>
+          <th scope="col">Username</th>
+          <th scope="col">Password</th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php
+foreach ($usuarios as $usuario) {
+    ?>
+        <tr>
+          <th scope="row"><?php echo $usuario['id']; ?></th>
+          <td><?php echo $usuario['username']; ?></td>
+          <td><?php echo $usuario['password']; ?></td>
+          <td><a href="../controllers/loginController-delete.php?id=<?php echo $usuario['id']; ?>" type="button"
+              class="btn btn-danger">Eliminar</a></td>
+        </tr>
+        <?php
+}?>
+
+      </tbody>
+    </table>
+
   </div>
 
 

@@ -4,6 +4,7 @@ require_once '../connection/Connection.php';
 
 class LoginModel extends Connection
 {
+    private $conexion;
 
     public function __construct()
     {
@@ -30,6 +31,35 @@ class LoginModel extends Connection
         if ($create) {
             return true;
         } else {
+            return false;
+        }
+    }
+
+    public function readUser()
+    {
+        $sql = "SELECT * FROM login";
+        // $create = $this->conexion->prepare($sql);
+        // $create->execute();
+        $result = $this->conexion->query($sql);
+
+        $users = $result->fetchAll(PDO::FETCH_ASSOC);
+        if ($result) {
+            return $users;
+        } else {
+            echo "error";
+        }
+    }
+
+    public function deleteUser($id)
+    {
+        $sql = "DELETE FROM login WHERE id ='$id'";
+        $stmt = $this->conexion->prepare($sql);
+        $stmt->execute();
+        if ($stmt) {
+            // return $idLogin;
+            return true;
+        } else {
+            print_r($stmt->errorInfo());
             return false;
         }
     }

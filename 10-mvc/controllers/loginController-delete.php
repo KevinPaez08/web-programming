@@ -3,23 +3,21 @@
 require_once '../models/LoginModel.php';
 
 // INSTANCE THE OBJECT OF CLASS connection
-$connect = new LoginModel();
+$deleteUser = new LoginModel();
 
 // SAVE USER DATA
-$user = $_POST['user'];
-$pass = $_POST['pass'];
+$user = $_GET['id'];
 
 // CHECK IF THE DATA IS EMPTY
-if (!empty($user) && !empty($pass)) {
+if (!empty($user)) {
 
-    // CALL THE METHOD createUser OF OBJECT connect
-    $connect->createUser($user, $pass);
+    // CALL THE METHOD deleteUser OF OBJECT connect
+    $userDeleted = $deleteUser->deleteUser($user);
 
     // IF ALL WAS SUCCESSFUL THE OBJECT connect RETURNS A TRUE
-    if ($connect) {
+    if ($userDeleted) {
         header('Location: ../views/dashboard.php');
     } else {
-        header('Location: ../index.php');
         echo "No se puedo acceder";
     }
 } else {
